@@ -12,19 +12,17 @@ cliente2.cpf = "3332223309";
 
 const ContaCorrenteMarcos = new ContaCorrente();
 ContaCorrenteMarcos.agencia = 1001;
-
-ContaCorrenteMarcos.depositar (-100);
-ContaCorrenteMarcos.depositar (100);
-ContaCorrenteMarcos.depositar (100);
-
-const valorSacado = ContaCorrenteMarcos.sacar(50);
-console.log(valorSacado)
-
-
+ContaCorrenteMarcos.cliente = cliente1;
+ContaCorrenteMarcos.depositar(500);
 console.log(ContaCorrenteMarcos);
 
 
+const conta2 = new ContaCorrente();
+conta2.cliente = cliente2;
+conta2.agencia = 102;
+console.log(conta2);
 
-//criar package.json
-//npm init
-//"type": "module"
+ContaCorrenteMarcos.transferir(200, conta2);
+
+console.log(conta2);
+console.log(ContaCorrenteMarcos);
