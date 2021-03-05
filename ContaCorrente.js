@@ -20,18 +20,16 @@ export class ContaCorrente {
         }
         this._saldo+= valor;   
     }
-    //tranferir = classe
-    //valor = atributo
-    //conta =  atributo
-    //valorSacado = objeto
     transferir (valor, conta){
         const valorSacado = this.sacar(valor);
         conta.depositar(valorSacado);
-      
+        
     }
-    //valorSacado = origen
-    //sacar = destino
 }
+
+//valorSacado = origen
+//sacar = destino
+
 
 //um atributo é uma propriedade de um objeto
 //metodos são ações de um objeto
@@ -39,3 +37,9 @@ export class ContaCorrente {
 //instanciar é um objeto com dados e funcionalidade
 //classe 
 //parametro é o nome que se dá a uma variável que possui função atribuida
+
+
+//tranferir = classe
+//valor = atributo
+//conta =  atributo
+//valorSacado = objeto
