@@ -18,13 +18,13 @@ console.log(ContaCorrenteMarcos);
 
 
 const conta2 = new ContaCorrente();
-conta2.cliente = new Cliente();
-conta2.cliente.nome = "Alice";
-conta2.cliente.cpf = 3332223309;
+conta2.cliente = cliente1;
 conta2.agencia = 102;
 
 
 let valor = 200;
 ContaCorrenteMarcos.transferir(200, conta2);
-console.log(conta2);
+
+conta2.saldo = 30000;
+console.log(conta2.saldo);
 //console.log(ContaCorrenteMarcos);
