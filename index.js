@@ -11,6 +11,7 @@ ContaCorrenteMarcos.sacar(100);
 //const Conta2 = new ContaCorrente(1001, cliente1);
 
 const ContaPoupanca = new ContaCorrente( 50, cliente1, 1001);
+ContaPoupanca.sacar(10);
 
 
 console.log(ContaPoupanca);
